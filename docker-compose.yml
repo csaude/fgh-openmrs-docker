@@ -26,7 +26,7 @@ services:
             - network
         volumes:
             - type: volume
-              source: data_mysql
+              source: datadb
               target: /opt/fgh/data/system/mysql
         restart: unless-stopped
 
@@ -35,4 +35,4 @@ networks:
     driver: bridge
 
 volumes:
-  data_mysql:
+  datadb:
