@@ -1,27 +1,30 @@
 version: '3.2'
 services:
-    # fgh-openmrs-tomcat:
-    #     build:
-    #         context: ./tomcat
-    #     container_name: fgh-openmrs-tomcat
-    #     ports:
-    #         - "8080:8080"
-    #     networks: 
-    #         - network
-    #     depends_on: 
-    #         - "fgh-openmrs-db"
-    #     volumes: 
-    #       - type: bind
-    #         source: /opt/fgh/data
-    #         target: /opt/fgh/data
-    #     restart: unless-stopped
+    fgh-openmrs-tomcat:
+        build:
+            context: ./tomcat
+        container_name: fgh-openmrs-tomcat
+        ports:
+            - "8081:8080"
+        networks: 
+            - network
+        depends_on: 
+            - "fgh-openmrs-db"
+        volumes: 
+          - type: bind
+            source: /opt/fgh/data/openmrswar
+            target: /usr/local/tomcat/webapps 
+          - type: bind
+            source: /opt/fgh/data/modules
+            target: /usr/local/tomcat/.OpenMRS/modules
+        restart: unless-stopped
 
     fgh-openmrs-db:
         build: 
             context: ./mysql
         container_name: fgh-openmrs-db
         ports: 
-            - "3306:3306"
+            - "3307:3306"
         networks: 
             - network
         volumes:
