@@ -5,7 +5,7 @@ services:
             context: ./tomcat
         container_name: fgh-openmrs-tomcat
         ports:
-            - "8081:8080"
+            - "8080:8080"
         networks: 
             - network
         depends_on: 
