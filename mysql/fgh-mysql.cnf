@@ -9,10 +9,10 @@ max_allowed_packet=512M
 character-set-server=utf8
 character-set-client-handshake=FALSE
 collation-server=utf8_general_ci
-datadir=/opt/data/system/mysql
+datadir=/opt/fgh/data/system/mysql
 
 [mysql]
 default-character-set=utf8
 
 [embedded]
-datadir=/opt/data/system/mysql
+datadir=/opt/fgh/data/system/mysql

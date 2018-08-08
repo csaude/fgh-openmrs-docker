@@ -30,7 +30,7 @@ services:
         volumes:
             - type: volume
               source: datadb
-              target: /opt/fgh/data/system/mysql
+              target: /opt/fgh/data
         restart: unless-stopped
 
 networks: 
