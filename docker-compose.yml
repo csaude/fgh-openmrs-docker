@@ -1,4 +1,4 @@
-version: '3.2'
+version: "3.0"
 services:
     # fgh-openmrs-tomcat:
     #     build:
@@ -28,9 +28,7 @@ services:
         networks: 
             - network
         volumes:
-            - type: volume
-              source: datadb
-              target: /opt/fgh-disa/data
+            - datadb:/opt/fgh-disa/data
         restart: unless-stopped
 
 networks: 
