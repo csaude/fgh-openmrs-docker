@@ -1,6 +1,7 @@
 version: '3.2'
 services:
     fgh-openmrs-tomcat:
+        privileged: true
         build:
             context: ./tomcat
         container_name: fgh-openmrs-tomcat
@@ -17,6 +18,24 @@ services:
           - type: bind
             source: /opt/fgh/data/modules
             target: /usr/local/tomcat/.OpenMRS/modules
+          - type: bind
+            source: /dev
+            target: /dev
+        environment:
+            tomcat_home: "/usr/local/tomcat"
+            temp_home: "/usr/local/tomcat/temp"
+            openmrs_data_home: "/usr/local/tomcat/.OpenMRS"
+            modules_home: "/usr/local/tomcat/.OpenMRS/modules"
+            eptssync_home: "/usr/local/tomcat/.OpenMRS/sync"
+            conf_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/conf"
+            data_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data"
+            process_status_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data/process_status"
+            source_process_status_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data/process_status/source"
+            database_preparation_process_status: "/usr/local/tomcat/.OpenMRS/sync/data/process_status/source/database_preparation"
+            pojo_generation_process_status: "/usr/local/tomcat/.OpenMRS/sync/data/process_status/source/pojo_generation"
+            pojo_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data/pojo"
+            bin_pojo_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data/pojo/bin/org/openmrs/module/eptssync/model/pojo"
+            src_pojo_eptssync_home: "/usr/local/tomcat/.OpenMRS/sync/data/pojo/src/org/openmrs/module/eptssync/model/pojo"
         restart: unless-stopped
 
     fgh-openmrs-db:

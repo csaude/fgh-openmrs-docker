@@ -1,2 +1,5 @@
-export JAVA_OPTS="-Dfile.encoding=UTF-8 -server -Xms512m -Xmx1536m -XX:PermSize=256m -XX:MaxPermSize=768m -Duser.timezone=Africa/Maputo"
+export JAVA_OPTS="-Dfile.encoding=UTF-8 -server -Xms1024m -Xmx3072m -XX:PermSize=512m -XX:MaxPermSize=1536m -Duser.timezone=Africa/Maputo"
+export CATALINA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+export JPDA_OPTS="-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
 export OPENMRS_RUNTIME_PROPERTIES_FILE='/usr/local/tomcat/.OpenMRS/openmrs-runtime.properties'
+
