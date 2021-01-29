@@ -9,6 +9,10 @@ max_allowed_packet=512M
 character-set-server=utf8
 character-set-client-handshake=FALSE
 collation-server=utf8_general_ci
+server-id=2
+log-bin=mysql-bin.log
+binlog_format=row
+
 # datadir=/opt/data/system/mysql
 
 [mysql]

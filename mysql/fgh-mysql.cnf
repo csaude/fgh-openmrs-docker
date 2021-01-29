@@ -10,6 +10,9 @@ character-set-server=utf8
 character-set-client-handshake=FALSE
 collation-server=utf8_general_ci
 datadir=/opt/fgh/data/system/mysql
+server-id=2
+log-bin=mysql-bin.log
+binlog_format=row
 
 [mysql]
 default-character-set=utf8

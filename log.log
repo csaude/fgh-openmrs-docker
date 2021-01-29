@@ -1,0 +1,803 @@
+Attaching to fgh-openmrs-db, fgh-openmrs-tomcat
+[36mfgh-openmrs-db        |[0m + [ ! -d /run/mysqld ]
+[36mfgh-openmrs-db        |[0m MySQL data directory exists
+[36mfgh-openmrs-db        |[0m Starting server
+[36mfgh-openmrs-db        |[0m + [ -d /opt/fgh/data/system/mysql ]
+[36mfgh-openmrs-db        |[0m + echo MySQL data directory exists
+[36mfgh-openmrs-db        |[0m + echo Starting server
+[36mfgh-openmrs-db        |[0m + exec /usr/sbin/mysqld --user=root --console
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 0 [Note] /usr/sbin/mysqld (mysqld 5.6.49-log) starting as process 1 ...
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] Plugin 'FEDERATED' is disabled.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Using atomics to ref count buffer pool pages
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: The InnoDB memory heap is disabled
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Memory barrier is not used
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Using Linux native AIO
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Using CPU crc32 instructions
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Initializing buffer pool, size = 4.0G
+[33mfgh-openmrs-tomcat    |[0m OpenJDK 64-Bit Server VM warning: ignoring option PermSize=512m; support was removed in 8.0
+[33mfgh-openmrs-tomcat    |[0m OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=1536m; support was removed in 8.0
+[33mfgh-openmrs-tomcat    |[0m Listening for transport dt_socket at address: 8000
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Completed initialization of buffer pool
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Highest supported file format is Barracuda.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: 128 rollback segment(s) are active.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: Waiting for purge to start
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] InnoDB: 5.6.49 started; log sequence number 327022841200
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] RSA private key file not found: /opt/fgh/data/system/mysql//private_key.pem. Some authentication plugins will not work.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] RSA public key file not found: /opt/fgh/data/system/mysql//public_key.pem. Some authentication plugins will not work.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] Server hostname (bind-address): '*'; port: 3306
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] IPv6 is available.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note]   - '::' resolves to '::';
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] Server socket created on IP: '::'.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Warning] 'user' entry 'root@bdd8ec6acdc9' ignored in --skip-name-resolve mode.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Warning] 'user' entry '@bdd8ec6acdc9' ignored in --skip-name-resolve mode.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Warning] 'proxies_priv' entry '@ root@bdd8ec6acdc9' ignored in --skip-name-resolve mode.
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] Event Scheduler: Loaded 0 events
+[36mfgh-openmrs-db        |[0m 2021-01-28 10:53:41 1 [Note] /usr/sbin/mysqld: ready for connections.
+[36mfgh-openmrs-db        |[0m Version: '5.6.49-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Server version:        Apache Tomcat/7.0.94
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Server built:          Apr 10 2019 16:56:40 UTC
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Server number:         7.0.94.0
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: OS Name:               Linux
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: OS Version:            5.8.0-38-generic
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Architecture:          amd64
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Java Home:             /usr/lib/jvm/java-1.8-openjdk/jre
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: JVM Version:           1.8.0_212-b04
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: JVM Vendor:            IcedTea
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: CATALINA_BASE:         /usr/local/tomcat
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: CATALINA_HOME:         /usr/local/tomcat
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Dfile.encoding=UTF-8
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Xms1024m
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Xmx3072m
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -XX:PermSize=512m
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -XX:MaxPermSize=1536m
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Duser.timezone=Africa/Maputo
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Djava.library.path=/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Dgnu.io.rxtx.SerialPorts=/dev/modem:/dev/ttyUSB1:/dev/ttyUSB0:/dev/ttyUSB2:/dev/sendsms
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Xdebug
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Dignore.endorsed.dirs=
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Dcatalina.base=/usr/local/tomcat
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Dcatalina.home=/usr/local/tomcat
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.VersionLoggerListener log
+[33mfgh-openmrs-tomcat    |[0m INFO: Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+[33mfgh-openmrs-tomcat    |[0m INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.coyote.AbstractProtocol init
+[33mfgh-openmrs-tomcat    |[0m INFO: Initializing ProtocolHandler ["http-bio-8080"]
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.coyote.AbstractProtocol init
+[33mfgh-openmrs-tomcat    |[0m INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.Catalina load
+[33mfgh-openmrs-tomcat    |[0m INFO: Initialization processed in 400 ms
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.core.StandardService startInternal
+[33mfgh-openmrs-tomcat    |[0m INFO: Starting service Catalina
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.core.StandardEngine startInternal
+[33mfgh-openmrs-tomcat    |[0m INFO: Starting Servlet Engine: Apache Tomcat/7.0.94
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:41 AM org.apache.catalina.startup.HostConfig deployWAR
+[33mfgh-openmrs-tomcat    |[0m INFO: Deploying web application archive /usr/local/tomcat/webapps/openmrs.war
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://www.springframework.org/tags/form is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://www.springframework.org/tags/form is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://www.springframework.org/tags is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/response-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/page-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/request-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/request-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://www.springframework.org/tags is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://www.springframework.org/tags/form is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/response-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TaglibUriRule body
+[33mfgh-openmrs-tomcat    |[0m INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/page-1.0 is already defined
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:53:43 AM org.apache.catalina.startup.TldConfig execute
+[33mfgh-openmrs-tomcat    |[0m INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[33mfgh-openmrs-tomcat    |[0m WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2078) |2021-01-28 10:53:44,232| Unable to find a runtime properties file at /usr/local/tomcat/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2078) |2021-01-28 10:53:44,243| Unable to find a runtime properties file at /usr/local/tomcat/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m INFO - Listener.contextInitialized(173) |2021-01-28 10:53:44,243| Using runtime properties file: /usr/local/tomcat/.OpenMRS/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2021-01-28 10:53:46,865| Initializing EhCache CacheManager
+[33mfgh-openmrs-tomcat    |[0m WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2021-01-28 10:53:52,182| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[33mfgh-openmrs-tomcat    |[0m WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2078) |2021-01-28 10:53:52,205| Unable to find a runtime properties file at /usr/local/tomcat/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m WARNING 1/28/21 10:53 AM:liquibase: modifyDataType will lose primary key/autoincrement/not null settings for mysql.  Use <sql> and re-specify all configuration if this is the case
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:53,728| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: layout.address.format value: <org.openmrs.layout.address.AddressTemplate>
+[33mfgh-openmrs-tomcat    |[0m      <nameMappings class="properties">
+[33mfgh-openmrs-tomcat    |[0m        <property name="postalCode" value="Location.postalCode"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address2" value="Location.address2"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address1" value="Location.address1"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="country" value="Location.country"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="stateProvince" value="Location.stateProvince"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="cityVillage" value="Location.cityVillage"/>
+[33mfgh-openmrs-tomcat    |[0m      </nameMappings>
+[33mfgh-openmrs-tomcat    |[0m      <sizeMappings class="properties">
+[33mfgh-openmrs-tomcat    |[0m        <property name="postalCode" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address2" value="40"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address1" value="40"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="country" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="stateProvince" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="cityVillage" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m      </sizeMappings>
+[33mfgh-openmrs-tomcat    |[0m      <lineByLineFormat>
+[33mfgh-openmrs-tomcat    |[0m        <string>address1</string>
+[33mfgh-openmrs-tomcat    |[0m        <string>address2</string>
+[33mfgh-openmrs-tomcat    |[0m        <string>cityVillage stateProvince country postalCode</string>
+[33mfgh-openmrs-tomcat    |[0m      </lineByLineFormat>
+[33mfgh-openmrs-tomcat    |[0m    </org.openmrs.layout.address.AddressTemplate>, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:53,804| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,347| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,351| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,356| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,359| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,398| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,403| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,407| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,410| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,768| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,772| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,775| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,778| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,905| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: smsreminder.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,913| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,917| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: smsreminder.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,920| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,933| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,936| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,939| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,942| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,963| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,966| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:54,970| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:54,974| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,159| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,162| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,166| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,170| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,220| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,224| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,229| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,232| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,312| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,315| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,319| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,323| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,419| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,423| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,427| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,430| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,484| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,488| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,491| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,495| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,595| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,598| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,602| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,605| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,679| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,682| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,686| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,689| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,790| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,793| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,797| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,801| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,853| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,857| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,860| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,864| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,879| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,882| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:55,886| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:55,889| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,031| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,034| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,038| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,042| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,144| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,148| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,152| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,155| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,261| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,264| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,268| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,271| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,354| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,358| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,361| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,365| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,468| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,471| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,474| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,477| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,783| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,787| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,791| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,794| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,948| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,951| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:56,955| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:56,958| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,097| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,100| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,104| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,107| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,237| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,240| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,243| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,246| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,394| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: eptssync.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,398| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,402| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: eptssync.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,406| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,499| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,502| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,505| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,509| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,599| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,603| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,607| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,610| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,681| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,684| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,688| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,691| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,772| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,775| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,778| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,781| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,805| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.BasicPatientNameSearch, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,816| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,899| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,903| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,907| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,910| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,972| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,976| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:57,980| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:57,983| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,048| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,051| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,054| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,056| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,112| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,116| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,119| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,122| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,190| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,196| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,199| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,202| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,320| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: attachments.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,324| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,328| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: attachments.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,331| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,446| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,450| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,454| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,457| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,572| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,576| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,580| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,583| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,678| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,681| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,684| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,687| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,756| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,758| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,761| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,764| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,891| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,894| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:58,897| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:58,900| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Reading from `liquibasechangelog`
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully acquired change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: liquibase.xml is using schema version 1.9 rather than version 2.0
+[33mfgh-openmrs-tomcat    |[0m INFO 1/28/21 10:53 AM:liquibase: Successfully released change log lock
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:59,060| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.started value: true, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:59,063| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:59,067| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.mandatory value: false, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:59,070| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:53:59,792| In method SchedulerService.saveToMemento. Arguments: 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:53:59,796| Exiting method saveToMemento
+[33mfgh-openmrs-tomcat    |[0m INFO - EhCacheManagerFactoryBean.destroy(181) |2021-01-28 10:53:59,822| Shutting down EhCache CacheManager
+[33mfgh-openmrs-tomcat    |[0m INFO - ServiceContext.startRefreshingContext(832) |2021-01-28 10:53:59,823| Refreshing Context
+[33mfgh-openmrs-tomcat    |[0m INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2021-01-28 10:54:06,639| Initializing EhCache CacheManager
+[33mfgh-openmrs-tomcat    |[0m WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2021-01-28 10:54:33,687| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[33mfgh-openmrs-tomcat    |[0m WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2021-01-28 10:54:36,007| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[33mfgh-openmrs-tomcat    |[0m INFO - ServiceContext.doneRefreshingContext(843) |2021-01-28 10:54:36,045| Done refreshing Context
+[33mfgh-openmrs-tomcat    |[0m WARN - IdgenTask.run(32) |2021-01-28 10:54:40,745| Not running scheduled task. DaemonToken = null; enabled = false
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,405| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: login.url value: login.htm, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,412| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,669| In method UserService.saveRole. Arguments: Role=Privilege Level: Full, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,675| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,746| In method UserService.saveRole. Arguments: Role=Privilege Level: High, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,750| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,820| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: visits.assignmentHandler value: org.openmrs.module.emrapi.adt.EmrApiVisitAssignmentHandler, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,827| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,882| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.installedVersion value: 20, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,892| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,905| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.systemAdministration, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,906| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,911| In method UserService.savePrivilege. Arguments: Privilege=App: referenceapplication.legacyAdmin, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,912| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,916| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.activeVisits, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,917| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,921| In method UserService.savePrivilege. Arguments: Privilege=App: atlas.manage, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,921| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,926| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.configuremetadata, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,926| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,931| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.findPatient, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,931| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,936| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.patientDashboard, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,936| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,941| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.patientVisits, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,942| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,947| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.systemAdministration, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,947| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,951| In method UserService.savePrivilege. Arguments: Privilege=App: formentryapp.forms, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,952| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,956| In method UserService.savePrivilege. Arguments: Privilege=App: referenceapplication.vitals, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,957| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,961| In method UserService.savePrivilege. Arguments: Privilege=App: registrationapp.registerPatient, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,961| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,966| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.createRetrospectiveVisit, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,966| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,970| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.createVisit, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,971| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,976| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.endVisit, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,976| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,981| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.mergeVisits, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,981| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,985| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleAdmission, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,985| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,988| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleDischarge, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,989| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,992| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleTransfer, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,992| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:42,996| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleVisitNote, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:42,996| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,000| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.vitals, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,000| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,004| In method UserService.savePrivilege. Arguments: Privilege=Task: Modify Allergies, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,004| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,008| In method UserService.savePrivilege. Arguments: Privilege=Task: emr.patient.encounter.delete, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,008| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,011| In method UserService.savePrivilege. Arguments: Privilege=Task: emr.patient.encounter.edit, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,012| Exiting method savePrivilege
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,063| In method UserService.saveRole. Arguments: Role=Application: Administers System, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,063| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,104| In method UserService.saveRole. Arguments: Role=Application: Configures Metadata, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,105| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,147| In method UserService.saveRole. Arguments: Role=Application: Configures Forms, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,148| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,190| In method UserService.saveRole. Arguments: Role=Application: Manages Atlas, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,191| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,235| In method UserService.saveRole. Arguments: Role=Application: Registers Patients, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,235| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,279| In method UserService.saveRole. Arguments: Role=Application: Enters Vitals, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,280| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,319| In method UserService.saveRole. Arguments: Role=Application: Uses Capture Vitals App, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,319| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,366| In method UserService.saveRole. Arguments: Role=Application: Uses Patient Summary, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,367| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,409| In method UserService.saveRole. Arguments: Role=Application: Writes Clinical Notes, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,410| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,468| In method UserService.saveRole. Arguments: Role=Application: Enters ADT Events, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,469| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,506| In method UserService.saveRole. Arguments: Role=Application: Records Allergies, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,507| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,513| In method UserService.saveRole. Arguments: Role=Application: Has Super User Privileges, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,513| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,521| In method UserService.saveRole. Arguments: Role=Application: Edits Existing Encounters, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,521| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,552| In method UserService.saveRole. Arguments: Role=Application: Sees Appointment Schedule, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,552| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,573| In method UserService.saveRole. Arguments: Role=Application: Requests Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,573| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,599| In method UserService.saveRole. Arguments: Role=Application: Schedules Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,600| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,621| In method UserService.saveRole. Arguments: Role=Application: Schedules And Overbooks Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,622| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,642| In method UserService.saveRole. Arguments: Role=Application: Manages Provider Schedules, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,642| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,649| In method UserService.saveRole. Arguments: Role=Application: Configures Appointment Scheduling, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,649| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,662| In method UserService.saveRole. Arguments: Role=Organizational: Doctor, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,663| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,677| In method UserService.saveRole. Arguments: Role=Organizational: Nurse, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,677| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,686| In method UserService.saveRole. Arguments: Role=Organizational: Registration Clerk, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,686| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,698| In method UserService.saveRole. Arguments: Role=Organizational: System Administrator, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,698| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:43,709| In method UserService.saveRole. Arguments: Role=Organizational: Hospital Administrator, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:43,709| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - SerializationServiceImpl.getDefaultSerializer(73) |2021-01-28 10:54:44,060| No default serializer specified - using builtin SimpleXStreamSerializer.
+[33mfgh-openmrs-tomcat    |[0m Security framework of XStream not initialized, XStream is probably vulnerable.
+[33mfgh-openmrs-tomcat    |[0m Security framework of XStream not initialized, XStream is probably vulnerable.
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,188| In method UserService.saveRole. Arguments: Role=Application: Administers System, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,210| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,223| In method UserService.saveRole. Arguments: Role=Application: Configures Appointment Scheduling, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,231| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,249| In method UserService.saveRole. Arguments: Role=Application: Configures Forms, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,259| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,273| In method UserService.saveRole. Arguments: Role=Application: Configures Metadata, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,281| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,294| In method UserService.saveRole. Arguments: Role=Application: Edits Existing Encounters, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,300| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,317| In method UserService.saveRole. Arguments: Role=Application: Enters ADT Events, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,326| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,341| In method UserService.saveRole. Arguments: Role=Application: Enters Vitals, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,346| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,363| In method UserService.saveRole. Arguments: Role=Application: Has Super User Privileges, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,369| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,382| In method UserService.saveRole. Arguments: Role=Application: Manages Atlas, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,387| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,399| In method UserService.saveRole. Arguments: Role=Application: Manages Provider Schedules, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,404| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,420| In method UserService.saveRole. Arguments: Role=Application: Records Allergies, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,424| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,436| In method UserService.saveRole. Arguments: Role=Application: Registers Patients, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,439| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,451| In method UserService.saveRole. Arguments: Role=Application: Requests Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,456| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,468| In method UserService.saveRole. Arguments: Role=Application: Schedules And Overbooks Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,472| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,484| In method UserService.saveRole. Arguments: Role=Application: Schedules Appointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,489| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,500| In method UserService.saveRole. Arguments: Role=Application: Sees Appointment Schedule, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,504| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,516| In method UserService.saveRole. Arguments: Role=Application: Uses Capture Vitals App, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,520| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,531| In method UserService.saveRole. Arguments: Role=Application: Uses Patient Summary, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,535| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,547| In method UserService.saveRole. Arguments: Role=Application: Writes Clinical Notes, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,551| Exiting method saveRole
+[33mfgh-openmrs-tomcat    |[0m INFO - SerializationServiceImpl.getDefaultSerializer(73) |2021-01-28 10:54:44,582| No default serializer specified - using builtin SimpleXStreamSerializer.
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,601| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: layout.address.format value: <org.openmrs.layout.address.AddressTemplate>
+[33mfgh-openmrs-tomcat    |[0m      <nameMappings class="properties">
+[33mfgh-openmrs-tomcat    |[0m        <property name="postalCode" value="Location.postalCode"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address2" value="Location.address2"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address1" value="Location.address1"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="country" value="Location.country"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="stateProvince" value="Location.stateProvince"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="cityVillage" value="Location.cityVillage"/>
+[33mfgh-openmrs-tomcat    |[0m      </nameMappings>
+[33mfgh-openmrs-tomcat    |[0m      <sizeMappings class="properties">
+[33mfgh-openmrs-tomcat    |[0m        <property name="postalCode" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address2" value="40"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="address1" value="40"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="country" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="stateProvince" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m        <property name="cityVillage" value="10"/>
+[33mfgh-openmrs-tomcat    |[0m      </sizeMappings>
+[33mfgh-openmrs-tomcat    |[0m      <lineByLineFormat>
+[33mfgh-openmrs-tomcat    |[0m        <string>address1</string>
+[33mfgh-openmrs-tomcat    |[0m        <string>address2</string>
+[33mfgh-openmrs-tomcat    |[0m        <string>cityVillage stateProvince country postalCode</string>
+[33mfgh-openmrs-tomcat    |[0m      </lineByLineFormat>
+[33mfgh-openmrs-tomcat    |[0m    </org.openmrs.layout.address.AddressTemplate>, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,610| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,669| In method UserService.saveUser. Arguments: User=clerk, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,683| Exiting method saveUser
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,706| In method UserService.saveUser. Arguments: User=nurse, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,713| Exiting method saveUser
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,735| In method UserService.saveUser. Arguments: User=doctor, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,742| Exiting method saveUser
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,783| In method UserService.saveUser. Arguments: User=sysadmin, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,791| Exiting method saveUser
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,867| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=7fba1e5,uuid=4da187c6-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,869| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,876| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=c8813f7e,uuid=5ab6d8a8-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,878| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,885| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=eb3d3d44,uuid=7dd9ac8e-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,886| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,893| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=ce2c34c4,uuid=7e7d3e26-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,895| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,902| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b4b49efa,uuid=7efeaa60-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,904| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,913| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=abc150ca,uuid=95636ce6-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,914| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,924| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b519c52f,uuid=9ebdc232-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,925| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,935| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b21fd75e,uuid=a62a40e0-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,937| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,946| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=f6a1c0a2,uuid=ac71c996-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,947| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,956| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=44b3d280,uuid=b29be856-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,958| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,966| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=da393751,uuid=cba5a260-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,968| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,976| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=e86393c9,uuid=d248c6c4-c436-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,977| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,986| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=ea148419,uuid=0c617770-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,987| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:44,997| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=81627d4b,uuid=136ed9a4-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:44,998| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,007| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=fd2cb9c5,uuid=1b2d98c4-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,008| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,018| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=cb138210,uuid=25873c9e-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,019| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,029| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=20d32feb,uuid=2febe6a8-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,030| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,039| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=479f1d6a,uuid=38081afa-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,041| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,051| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=65d684ad,uuid=3f5a8ca2-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,052| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,061| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=33718375,uuid=452c596c-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,062| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,071| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=9e3b268b,uuid=4d3b6396-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,072| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,081| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=f282c552,uuid=4d85dda4-c437-11e4-a470-82b0ea87e2d8], 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,083| Exiting method saveAppointmentType
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,470| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.identifierSourceId value: 2, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,474| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m Security framework of XStream not initialized, XStream is probably vulnerable.
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,567| In method DefinitionService.saveDefinition. Arguments: Definition=appointmentschedulingui.appointmentDataSetDefinition.dailyAppointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,570| In method SerializedDefinitionService.saveDefinition. Arguments: Definition=appointmentschedulingui.appointmentDataSetDefinition.dailyAppointments, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,594| Exiting method saveDefinition
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,594| Exiting method saveDefinition
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,641| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.ExistingPatientNameSearch, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,650| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,670| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emr.concept.diagnosisSetOfSets value: 160167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,677| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,680| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.givenNameStringEncoder value: Soundex, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,688| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,691| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.middleNameStringEncoder value: Soundex, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,700| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,703| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.familyNameStringEncoder value: Soundex, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,710| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,713| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.familyName2StringEncoder value: Soundex, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,720| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,723| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.BasicPatientNameSearch, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,731| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,735| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.fastSimilarPatientSearchAlgorithm value: registrationcore.BasicSimilarPatientSearchAlgorithm, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,741| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,745| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.preciseSimilarPatientSearchAlgorithm value: registrationcore.BasicExactPatientSearchAlgorithm, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,754| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(116) |2021-01-28 10:54:45,758| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: conceptmanagementapps.snomedCtConceptSource value: 1ADDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD, 
+[33mfgh-openmrs-tomcat    |[0m INFO - LoggingAdvice.invoke(156) |2021-01-28 10:54:45,768| Exiting method saveGlobalProperty
+[33mfgh-openmrs-tomcat    |[0m ERROR - CommonsLoggingOutput.error(75) |2021-01-28 10:54:47,654| Line=362 The content of element type "dwr" must match "(init?,allow?,signatures?)".
+[33mfgh-openmrs-tomcat    |[0m ERROR - CommonsLoggingOutput.error(75) |2021-01-28 10:54:47,657| Parameter mismatch parsing signatures section in dwr.xml on line: DWRAtlasService.disableAtlasModule()
+[33mfgh-openmrs-tomcat    |[0m ERROR - CommonsLoggingOutput.error(75) |2021-01-28 10:54:47,660| Parameter mismatch parsing signatures section in dwr.xml on line: DWRHtmlFormEntryService.checkIfLoggedIn()
+[33mfgh-openmrs-tomcat    |[0m WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2078) |2021-01-28 10:54:47,683| Unable to find a runtime properties file at /usr/local/tomcat/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:54:47 AM org.apache.catalina.session.StandardManager startInternal
+[33mfgh-openmrs-tomcat    |[0m SEVERE: Exception loading sessions from persistent storage
+[33mfgh-openmrs-tomcat    |[0m java.lang.ClassCastException: java.io.ObjectStreamClass cannot be cast to java.lang.String
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readTypeString(ObjectInputStream.java:1650)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:803)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:891)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1857)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1751)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2042)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1573)
+[33mfgh-openmrs-tomcat    |[0m 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:431)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.session.StandardSession.readObject(StandardSession.java:1609)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:1075)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:259)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.session.StandardManager.load(StandardManager.java:176)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:465)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5730)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+[33mfgh-openmrs-tomcat    |[0m 	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+[33mfgh-openmrs-tomcat    |[0m 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[33mfgh-openmrs-tomcat    |[0m 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[33mfgh-openmrs-tomcat    |[0m 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[33mfgh-openmrs-tomcat    |[0m 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[33mfgh-openmrs-tomcat    |[0m 	at java.lang.Thread.run(Thread.java:748)
+[33mfgh-openmrs-tomcat    |[0m 
+[33mfgh-openmrs-tomcat    |[0m WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2078) |2021-01-28 10:54:47,809| Unable to find a runtime properties file at /usr/local/tomcat/openmrs-runtime.properties
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:54:47 AM org.apache.catalina.startup.HostConfig deployWAR
+[33mfgh-openmrs-tomcat    |[0m INFO: Deployment of web application archive /usr/local/tomcat/webapps/openmrs.war has finished in 65,932 ms
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:54:47 AM org.apache.coyote.AbstractProtocol start
+[33mfgh-openmrs-tomcat    |[0m INFO: Starting ProtocolHandler ["http-bio-8080"]
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:54:47 AM org.apache.coyote.AbstractProtocol start
+[33mfgh-openmrs-tomcat    |[0m INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+[33mfgh-openmrs-tomcat    |[0m Jan 28, 2021 10:54:47 AM org.apache.catalina.startup.Catalina start
+[33mfgh-openmrs-tomcat    |[0m INFO: Server startup in 65979 ms
+Gracefully stopping... (press Ctrl+C again to force)
